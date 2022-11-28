@@ -1,0 +1,25 @@
+22/11/28 18:47:56 INFO CommunicatorApp$: Started Communicator App!
+22/11/28 18:48:03 INFO CommunicatorApp$: Info to cross verify read from DB. Total rows: 20000
+22/11/28 18:48:03 INFO CommunicatorApp$: Sample data of read (username,purchases):
+22/11/28 18:48:04 INFO CommunicatorApp$: (xljyyk,List(PurchaseInfo(1,uvlxfriyfrd,1300), PurchaseInfo(2,elfsrtumpvlyuda,1543), PurchaseInfo(3,lbcjewunuscqyca,1115), PurchaseInfo(4,mxlsqxmkfcj,1068), PurchaseInfo(5,olcposp,1655), PurchaseInfo(6,thurrbwksfzb,649), PurchaseInfo(7,gbrwwutxvxbah,1632)))
+22/11/28 18:48:04 INFO CommunicatorApp$: (xqmdexdddl,List(PurchaseInfo(1,abrdruglxk,639), PurchaseInfo(2,hoqjel,1172), PurchaseInfo(3,oevyxkt,1406), PurchaseInfo(4,esmgosnem,1399), PurchaseInfo(5,jzbwwln,1654), PurchaseInfo(6,dwlqgjctu,1340), PurchaseInfo(7,pklblnerg,759), PurchaseInfo(8,oswcclhxvnkdz,1757), PurchaseInfo(9,jtywzhqojxegcx,1822)))
+22/11/28 18:48:04 INFO CommunicatorApp$: (rsvvmhrvt,List(PurchaseInfo(1,urnnirchfbse,1455), PurchaseInfo(2,onryxvmsajf,1308), PurchaseInfo(3,basdsd,1213), PurchaseInfo(4,hfqrnxxcroak,767), PurchaseInfo(5,zytbuqkfxog,656), PurchaseInfo(6,wbtdkuioc,1433)))
+22/11/28 18:48:04 INFO CommunicatorApp$: total price of purchases of each user:
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(ocbci),9461)
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(rqxabf),1995)
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(pwgvyot),13234)
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(mjkjaekblways),13687)
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(dohlgmurn),10413)
+22/11/28 18:48:04 INFO CommunicatorApp$: Max price purchased user in a country: 
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(India),(Some(brqfkpyxkshpigw),21220))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Pakistan),(Some(nvptnhyurkos),20577))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),(Some(dtantq),21630))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Nepal),(Some(tckoq),20622))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Japan),(Some(ltjaqddjqp),21710))
+22/11/28 18:48:04 INFO CommunicatorApp$: Min price purchased user in a country: 
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(India),(Some(hbbnejfnhu),0))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Pakistan),(Some(libxzbj),0))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),(Some(tbcczbkmdvblni),0))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Nepal),(Some(vtftidhp),0))
+22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Japan),(Some(gdrevktebfcaqi),0))
+22/11/28 18:48:05 INFO CommunicatorApp$: Shutting down Communicator app!
