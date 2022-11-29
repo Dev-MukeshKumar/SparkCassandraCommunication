@@ -1,7 +1,8 @@
 package com.communicator
 
-import com.datastax.spark.connector.toSparkContextFunctions
+import com.datastax.spark.connector.{SomeColumns, toRDDFunctions, toSparkContextFunctions}
 import data.schema.{PurchaseInfo, UserHistory}
+import data.generate.IndividualData._
 import org.apache.log4j.Logger
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
@@ -47,6 +48,15 @@ object CommunicatorApp extends Serializable {
     logger.info("Min price purchased user in a country: ")
     val minPriceUserCountryWise = totalPricePerCountry.reduceByKey((v1,v2)=> if(v1._2 < v2._2) v1 else v2)
     minPriceUserCountryWise.foreach(logger.info(_))
+
+
+    //read from DB using join operation
+    val countriesRdd = spark.sparkContext.parallelize(country.map(data => UserHistory(Option(data),None,None,None,List.empty,None)))
+    val readDataByJoinOperation = countriesRdd.joinWithCassandraTable[UserHistory]("cassandra_communication","countrywise_sales").on(SomeColumns("country")).cache()
+    val readDataByJoin = readDataByJoinOperation.map(_._2)
+    logger.info("No. of row after join: "+readDataByJoin.count())
+    logger.info("Sample data of read data by join: ")
+    readDataByJoin.take(10).foreach(logger.info(_))
 
     spark.stop()
     logger.info("Shutting down Communicator app!")

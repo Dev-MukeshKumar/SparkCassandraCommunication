@@ -1,25 +1,37 @@
-22/11/28 18:47:56 INFO CommunicatorApp$: Started Communicator App!
-22/11/28 18:48:03 INFO CommunicatorApp$: Info to cross verify read from DB. Total rows: 20000
-22/11/28 18:48:03 INFO CommunicatorApp$: Sample data of read (username,purchases):
-22/11/28 18:48:04 INFO CommunicatorApp$: (xljyyk,List(PurchaseInfo(1,uvlxfriyfrd,1300), PurchaseInfo(2,elfsrtumpvlyuda,1543), PurchaseInfo(3,lbcjewunuscqyca,1115), PurchaseInfo(4,mxlsqxmkfcj,1068), PurchaseInfo(5,olcposp,1655), PurchaseInfo(6,thurrbwksfzb,649), PurchaseInfo(7,gbrwwutxvxbah,1632)))
-22/11/28 18:48:04 INFO CommunicatorApp$: (xqmdexdddl,List(PurchaseInfo(1,abrdruglxk,639), PurchaseInfo(2,hoqjel,1172), PurchaseInfo(3,oevyxkt,1406), PurchaseInfo(4,esmgosnem,1399), PurchaseInfo(5,jzbwwln,1654), PurchaseInfo(6,dwlqgjctu,1340), PurchaseInfo(7,pklblnerg,759), PurchaseInfo(8,oswcclhxvnkdz,1757), PurchaseInfo(9,jtywzhqojxegcx,1822)))
-22/11/28 18:48:04 INFO CommunicatorApp$: (rsvvmhrvt,List(PurchaseInfo(1,urnnirchfbse,1455), PurchaseInfo(2,onryxvmsajf,1308), PurchaseInfo(3,basdsd,1213), PurchaseInfo(4,hfqrnxxcroak,767), PurchaseInfo(5,zytbuqkfxog,656), PurchaseInfo(6,wbtdkuioc,1433)))
-22/11/28 18:48:04 INFO CommunicatorApp$: total price of purchases of each user:
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(ocbci),9461)
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(rqxabf),1995)
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(pwgvyot),13234)
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(mjkjaekblways),13687)
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),Some(dohlgmurn),10413)
-22/11/28 18:48:04 INFO CommunicatorApp$: Max price purchased user in a country: 
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(India),(Some(brqfkpyxkshpigw),21220))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Pakistan),(Some(nvptnhyurkos),20577))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),(Some(dtantq),21630))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Nepal),(Some(tckoq),20622))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Japan),(Some(ltjaqddjqp),21710))
-22/11/28 18:48:04 INFO CommunicatorApp$: Min price purchased user in a country: 
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(India),(Some(hbbnejfnhu),0))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Pakistan),(Some(libxzbj),0))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Germany),(Some(tbcczbkmdvblni),0))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Nepal),(Some(vtftidhp),0))
-22/11/28 18:48:04 INFO CommunicatorApp$: (Some(Japan),(Some(gdrevktebfcaqi),0))
-22/11/28 18:48:05 INFO CommunicatorApp$: Shutting down Communicator app!
+22/11/29 11:12:22 INFO CommunicatorApp$: Started Communicator App!
+22/11/29 11:12:29 INFO CommunicatorApp$: Info to cross verify read from DB. Total rows: 20000
+22/11/29 11:12:29 INFO CommunicatorApp$: Sample data of read (username,purchases):
+22/11/29 11:12:29 INFO CommunicatorApp$: (xljyyk,List(PurchaseInfo(1,uvlxfriyfrd,1300), PurchaseInfo(2,elfsrtumpvlyuda,1543), PurchaseInfo(3,lbcjewunuscqyca,1115), PurchaseInfo(4,mxlsqxmkfcj,1068), PurchaseInfo(5,olcposp,1655), PurchaseInfo(6,thurrbwksfzb,649), PurchaseInfo(7,gbrwwutxvxbah,1632)))
+22/11/29 11:12:29 INFO CommunicatorApp$: (xqmdexdddl,List(PurchaseInfo(1,abrdruglxk,639), PurchaseInfo(2,hoqjel,1172), PurchaseInfo(3,oevyxkt,1406), PurchaseInfo(4,esmgosnem,1399), PurchaseInfo(5,jzbwwln,1654), PurchaseInfo(6,dwlqgjctu,1340), PurchaseInfo(7,pklblnerg,759), PurchaseInfo(8,oswcclhxvnkdz,1757), PurchaseInfo(9,jtywzhqojxegcx,1822)))
+22/11/29 11:12:29 INFO CommunicatorApp$: (rsvvmhrvt,List(PurchaseInfo(1,urnnirchfbse,1455), PurchaseInfo(2,onryxvmsajf,1308), PurchaseInfo(3,basdsd,1213), PurchaseInfo(4,hfqrnxxcroak,767), PurchaseInfo(5,zytbuqkfxog,656), PurchaseInfo(6,wbtdkuioc,1433)))
+22/11/29 11:12:29 INFO CommunicatorApp$: total price of purchases of each user:
+22/11/29 11:12:29 INFO CommunicatorApp$: (Some(Germany),Some(ocbci),9461)
+22/11/29 11:12:29 INFO CommunicatorApp$: (Some(Germany),Some(rqxabf),1995)
+22/11/29 11:12:29 INFO CommunicatorApp$: (Some(Germany),Some(pwgvyot),13234)
+22/11/29 11:12:29 INFO CommunicatorApp$: (Some(Germany),Some(mjkjaekblways),13687)
+22/11/29 11:12:29 INFO CommunicatorApp$: (Some(Germany),Some(dohlgmurn),10413)
+22/11/29 11:12:29 INFO CommunicatorApp$: Max price purchased user in a country: 
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(India),(Some(brqfkpyxkshpigw),21220))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Pakistan),(Some(nvptnhyurkos),20577))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Germany),(Some(dtantq),21630))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Nepal),(Some(tckoq),20622))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Japan),(Some(ltjaqddjqp),21710))
+22/11/29 11:12:30 INFO CommunicatorApp$: Min price purchased user in a country: 
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(India),(Some(hbbnejfnhu),0))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Pakistan),(Some(libxzbj),0))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Germany),(Some(tbcczbkmdvblni),0))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Nepal),(Some(vtftidhp),0))
+22/11/29 11:12:30 INFO CommunicatorApp$: (Some(Japan),(Some(gdrevktebfcaqi),0))
+22/11/29 11:12:30 INFO CommunicatorApp$: No. of row after join: 20000
+22/11/29 11:12:30 INFO CommunicatorApp$: Sample data of read data by join: 
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(12),Some(72),Some(100-806-4206),List(PurchaseInfo(1,regebrhrgjf,1262), PurchaseInfo(2,psboix,1291), PurchaseInfo(3,hzxutsjssdv,1379), PurchaseInfo(4,akdwssxn,845), PurchaseInfo(5,hdxmavaqzzmnrqh,896)),Some(swmkcyjlh))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(16),Some(39),Some(593-664-2415),List(PurchaseInfo(1,vxrayr,476), PurchaseInfo(2,wvwxiqqd,339), PurchaseInfo(3,tnlbicdouvtfhfv,1434), PurchaseInfo(4,pdtclzvb,1346), PurchaseInfo(5,gqfonfqemqcg,890), PurchaseInfo(6,pifvnibgb,673), PurchaseInfo(7,mfaijaiyu,80), PurchaseInfo(8,ckjqabegzfnk,644), PurchaseInfo(9,luezrapncfovzuj,809), PurchaseInfo(10,hjfvhdukvz,866), PurchaseInfo(11,spswqjydjxx,1736)),Some(vletctd))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(37),Some(53),Some(599-211-6851),List(PurchaseInfo(1,gdvykwkjerxcgw,1301), PurchaseInfo(2,jfolrrwmcnbvok,1792), PurchaseInfo(3,ieyimkor,215), PurchaseInfo(4,jsheseznt,1886), PurchaseInfo(5,ukrladv,548), PurchaseInfo(6,amshiukwncdaq,240)),Some(zfylprsfe))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(77),Some(36),Some(263-691-7190),List(PurchaseInfo(1,pjcbkov,260), PurchaseInfo(2,kdyiwfqjnuqtmt,1421), PurchaseInfo(3,kkufckvmccdyta,618), PurchaseInfo(4,pfsglbvuqohkm,1778), PurchaseInfo(5,ayubbjkdqiu,1637), PurchaseInfo(6,qpctjjgyvkltb,1401)),Some(ulhcfihpotee))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(92),Some(55),Some(202-417-7906),List(PurchaseInfo(1,ymdaozekzbv,1070), PurchaseInfo(2,baqnnzbrkgnhl,1611), PurchaseInfo(3,txamlaotdkb,1809)),Some(grbkcyre))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(94),Some(29),Some(747-787-4772),List(PurchaseInfo(1,oxmppboigi,781), PurchaseInfo(2,hfrjwsowx,618), PurchaseInfo(3,cuxuzkfzlofpbc,740), PurchaseInfo(4,yuldtxmrxedbvi,365), PurchaseInfo(5,byqgcszywof,640), PurchaseInfo(6,zsmzuj,732), PurchaseInfo(7,ervkmkpvoyqb,271), PurchaseInfo(8,mvrpyhvjuup,598), PurchaseInfo(9,ptowtypvqeixm,1798), PurchaseInfo(10,tileezngzdmmy,550), PurchaseInfo(11,vowuzwmlvo,995), PurchaseInfo(12,pplideoq,1142), PurchaseInfo(13,payqysagra,1052), PurchaseInfo(14,oxshyum,63), PurchaseInfo(15,gjysgqopuydq,684)),Some(oxtqi))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(102),Some(33),Some(938-563-1428),List(PurchaseInfo(1,zprnqkicqpicam,682), PurchaseInfo(2,darrutdqxqz,366), PurchaseInfo(3,cyrlkrwdgbw,1153), PurchaseInfo(4,ogtknzkigtrjqat,82), PurchaseInfo(5,abjbnxszgbyln,126), PurchaseInfo(6,xdyyxwk,766), PurchaseInfo(7,hlztiukzocop,518), PurchaseInfo(8,arquvqlake,1057), PurchaseInfo(9,lsuhpaymh,1750), PurchaseInfo(10,tdqwwbfgkicz,901), PurchaseInfo(11,xgesnis,1509), PurchaseInfo(12,lznvhr,952), PurchaseInfo(13,akmlhzgro,818), PurchaseInfo(14,ugewmudzdhpi,525), PurchaseInfo(15,csbtggkcyqbqn,1929)),Some(grcblewrfu))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(106),Some(37),Some(180-942-8059),List(PurchaseInfo(1,vqgnqs,866), PurchaseInfo(2,xcyuitwiezx,431), PurchaseInfo(3,hzlccswmfmlpr,1734), PurchaseInfo(4,kggtsuueqdpxzi,586), PurchaseInfo(5,iikxpa,1070), PurchaseInfo(6,zdbjjxod,1751), PurchaseInfo(7,qisvcxmdur,608), PurchaseInfo(8,nhlbzaraevlskce,189), PurchaseInfo(9,snmartpf,1483), PurchaseInfo(10,tzxlml,1827), PurchaseInfo(11,bavfdq,525)),Some(rdhtmevafdvun))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(110),Some(26),Some(284-985-9893),List(PurchaseInfo(1,scpscu,177), PurchaseInfo(2,wjcxagjkimyjff,1303), PurchaseInfo(3,ldhaen,1896), PurchaseInfo(4,jhxxzbfgyclci,420), PurchaseInfo(5,buhkefxnglnvfgl,1733), PurchaseInfo(6,fqathqfophseh,187), PurchaseInfo(7,qegxxifhxcx,1096), PurchaseInfo(8,zsshwv,159), PurchaseInfo(9,ewzffydivp,1847), PurchaseInfo(10,yvtgoo,1421), PurchaseInfo(11,ghqyzswzqvrae,802), PurchaseInfo(12,yghygvbhfn,937), PurchaseInfo(13,ypadnxbz,846), PurchaseInfo(14,aafcldz,1135), PurchaseInfo(15,xprutwysdzvxqk,1860)),Some(kuoqjvsjiusfg))
+22/11/29 11:12:30 INFO CommunicatorApp$: UserHistory(Some(Australia),Some(140),Some(31),Some(278-700-4108),List(PurchaseInfo(1,ohbtboqna,119), PurchaseInfo(2,dqixlqukt,259), PurchaseInfo(3,pyjnetv,1519), PurchaseInfo(4,lgzpeamg,1323), PurchaseInfo(5,ixmlxhnsramgfs,999), PurchaseInfo(6,ovgwxsmrkwok,640), PurchaseInfo(7,kjtjhkfpjpxtf,861), PurchaseInfo(8,wqrbmalkobzuet,537)),Some(sxdlmlb))
+22/11/29 11:12:30 INFO CommunicatorApp$: Shutting down Communicator app!
