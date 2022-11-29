@@ -1,6 +1,6 @@
 package data.generate
 
-import data.schema.PurchaseInfo
+import data.schema._
 
 import scala.annotation.tailrec
 import scala.util._

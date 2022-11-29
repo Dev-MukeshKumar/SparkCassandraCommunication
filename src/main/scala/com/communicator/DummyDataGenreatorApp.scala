@@ -3,10 +3,9 @@ package com.communicator
 import data.generate.TableData._
 import org.apache.log4j.Logger
 import org.apache.spark.SparkConf
-import org.apache.spark.sql.{Dataset, SparkSession}
+import org.apache.spark.sql._
 import data.schema._
 import data.generate.IndividualData._
-import org.apache.spark.sql.functions.slice
 
 import java.util.Properties
 import scala.io.Source

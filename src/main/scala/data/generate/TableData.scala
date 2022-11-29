@@ -1,6 +1,6 @@
 package data.generate
 
-import data.schema.UserHistory
+import data.schema._
 import data.generate.IndividualData._
 
 import scala.annotation.tailrec
