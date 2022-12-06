@@ -47,14 +47,14 @@ object CommunicatorApp extends Serializable {
     totalPriceEachUserData.take(5).foreach(logger.info(_))
 
     //max and min price per country
-    val totalPricePerCountry = totalPriceEachUserData.map(data => (data._1,(data._2,data._3)))
+    val totalPricePerCountry = totalPriceEachUserData.map(data => (data._1,data._3))
     logger.info("")
     logger.info("Max price purchased user in a country: ")
-    val maxPriceUserCountryWise = totalPricePerCountry.reduceByKey((v1,v2)=> if(v1._2 > v2._2) v1 else v2)
+    val maxPriceUserCountryWise = totalPricePerCountry.reduceByKey((x,y) => x max y)
     maxPriceUserCountryWise.foreach(logger.info(_))
     logger.info("")
     logger.info("Min price purchased user in a country: ")
-    val minPriceUserCountryWise = totalPricePerCountry.reduceByKey((v1,v2)=> if(v1._2 < v2._2) v1 else v2)
+    val minPriceUserCountryWise = totalPricePerCountry.reduceByKey((x,y) => x min y)
     minPriceUserCountryWise.foreach(logger.info(_))
 
 

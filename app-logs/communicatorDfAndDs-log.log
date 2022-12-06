@@ -1,38 +1,39 @@
-22/11/29 14:54:00 INFO CommunicatorAppWithDfAndDs$: Communicator app started!
-22/11/29 14:54:06 INFO CommunicatorAppWithDfAndDs$: Sample data read as DS from DB:
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(15),Some(58),Some(321-484-8830),List(PurchaseInfo(1,vnaehktdfjgpka,1978), PurchaseInfo(2,vvwoyev,1637), PurchaseInfo(3,ckzadg,1009), PurchaseInfo(4,hpsollsxprno,1247), PurchaseInfo(5,yxgfqepjju,998), PurchaseInfo(6,zafjbkvlswcd,42), PurchaseInfo(7,qbngbdjrsrj,1922), PurchaseInfo(8,mywydxn,1276)),Some(vjonmixjsy))
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(28),Some(74),Some(632-340-2556),List(PurchaseInfo(1,xguioiqi,176), PurchaseInfo(2,ccmwlnuz,80), PurchaseInfo(3,tgbyzjl,1299), PurchaseInfo(4,unggkzwfih,442)),Some(mbfpcuhkxqwkkn))
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(33),Some(51),Some(271-684-8633),List(PurchaseInfo(1,ekrpdpkogucbht,1366), PurchaseInfo(2,vcoulnepac,1875), PurchaseInfo(3,gaazikvwjj,375), PurchaseInfo(4,jbgtoohqhpobwpc,771), PurchaseInfo(5,kuuttcewycuad,938), PurchaseInfo(6,wqfdfqiuehgukz,1027), PurchaseInfo(7,yniepwobl,361), PurchaseInfo(8,yuyruzojcigecrd,946), PurchaseInfo(9,viftefbmsofe,972), PurchaseInfo(10,bpluwhxgcv,85), PurchaseInfo(11,evkxjxfsdrnl,1055)),Some(eyxicpp))
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(54),Some(33),Some(402-652-4053),List(PurchaseInfo(1,wxvpilhbhfd,766), PurchaseInfo(2,fnyjmdqmtxjt,725), PurchaseInfo(3,zafeaf,862)),Some(wfqdumf))
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(59),Some(66),Some(564-897-4768),List(PurchaseInfo(1,kzqpsdswbsk,716), PurchaseInfo(2,tqabitzaavyhbfz,1379), PurchaseInfo(3,etlgjboifklsivs,603), PurchaseInfo(4,ubrvuyzvs,1037), PurchaseInfo(5,whndqmp,570), PurchaseInfo(6,bneljkprodfuud,337), PurchaseInfo(7,aekdhk,1790)),Some(gtczhgpmzkzrgxq))
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: 
-22/11/29 14:54:08 INFO CommunicatorAppWithDfAndDs$: Sample data read as DS from DB with constrains and few columns:
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: (Some(xljyyk),List(PurchaseInfo(1,uvlxfriyfrd,1300), PurchaseInfo(2,elfsrtumpvlyuda,1543), PurchaseInfo(3,lbcjewunuscqyca,1115), PurchaseInfo(4,mxlsqxmkfcj,1068), PurchaseInfo(5,olcposp,1655), PurchaseInfo(6,thurrbwksfzb,649), PurchaseInfo(7,gbrwwutxvxbah,1632)))
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: (Some(xqmdexdddl),List(PurchaseInfo(1,abrdruglxk,639), PurchaseInfo(2,hoqjel,1172), PurchaseInfo(3,oevyxkt,1406), PurchaseInfo(4,esmgosnem,1399), PurchaseInfo(5,jzbwwln,1654), PurchaseInfo(6,dwlqgjctu,1340), PurchaseInfo(7,pklblnerg,759), PurchaseInfo(8,oswcclhxvnkdz,1757), PurchaseInfo(9,jtywzhqojxegcx,1822)))
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: (Some(rsvvmhrvt),List(PurchaseInfo(1,urnnirchfbse,1455), PurchaseInfo(2,onryxvmsajf,1308), PurchaseInfo(3,basdsd,1213), PurchaseInfo(4,hfqrnxxcroak,767), PurchaseInfo(5,zytbuqkfxog,656), PurchaseInfo(6,wbtdkuioc,1433)))
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: (Some(dslwfgpxej),List(PurchaseInfo(1,gcvngihmigscfpp,278), PurchaseInfo(2,xzriqqrelbin,138), PurchaseInfo(3,dobbnmptkyjmbnc,143), PurchaseInfo(4,kiksqam,872), PurchaseInfo(5,sybspxiic,1950), PurchaseInfo(6,zuxgyiqm,1115), PurchaseInfo(7,vrbktmfy,1360), PurchaseInfo(8,usylwfra,735)))
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: (Some(chsjprj),List(PurchaseInfo(1,xpczwlizqyqzmv,675), PurchaseInfo(2,alygrfzjy,999), PurchaseInfo(3,bibkqgva,1577), PurchaseInfo(4,yncbwrhndcwbm,1930), PurchaseInfo(5,fptyixggafdo,167), PurchaseInfo(6,mvnhczx,1033)))
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: 4979
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: 
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: Sample data of total price of purchase for each user: 
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(ocbci),9461)
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(rqxabf),1995)
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(pwgvyot),13234)
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(mjkjaekblways),13687)
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(dohlgmurn),10413)
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: 
-22/11/29 14:54:09 INFO CommunicatorAppWithDfAndDs$: Max purchase price in a country:
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Germany,21630)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (India,21220)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Japan,21710)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Nepal,20622)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Pakistan,20577)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: 
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: Min purchase price in a country:
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Germany,0)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (India,0)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Japan,0)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Nepal,0)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: (Pakistan,0)
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: 
-22/11/29 14:54:10 INFO CommunicatorAppWithDfAndDs$: Communicator app shutting down!
+22/12/06 11:48:32 INFO CommunicatorAppWithDfAndDs$: Communicator app started!
+22/12/06 11:48:38 INFO CommunicatorAppWithDfAndDs$: Sample data read as DS from DB:
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(15),Some(58),Some(321-484-8830),List(PurchaseInfo(1,vnaehktdfjgpka,1978), PurchaseInfo(2,vvwoyev,1637), PurchaseInfo(3,ckzadg,1009), PurchaseInfo(4,hpsollsxprno,1247), PurchaseInfo(5,yxgfqepjju,998), PurchaseInfo(6,zafjbkvlswcd,42), PurchaseInfo(7,qbngbdjrsrj,1922), PurchaseInfo(8,mywydxn,1276)),Some(vjonmixjsy))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(28),Some(74),Some(632-340-2556),List(PurchaseInfo(1,xguioiqi,176), PurchaseInfo(2,ccmwlnuz,80), PurchaseInfo(3,tgbyzjl,1299), PurchaseInfo(4,unggkzwfih,442)),Some(mbfpcuhkxqwkkn))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(33),Some(51),Some(271-684-8633),List(PurchaseInfo(1,ekrpdpkogucbht,1366), PurchaseInfo(2,vcoulnepac,1875), PurchaseInfo(3,gaazikvwjj,375), PurchaseInfo(4,jbgtoohqhpobwpc,771), PurchaseInfo(5,kuuttcewycuad,938), PurchaseInfo(6,wqfdfqiuehgukz,1027), PurchaseInfo(7,yniepwobl,361), PurchaseInfo(8,yuyruzojcigecrd,946), PurchaseInfo(9,viftefbmsofe,972), PurchaseInfo(10,bpluwhxgcv,85), PurchaseInfo(11,evkxjxfsdrnl,1055)),Some(eyxicpp))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(54),Some(33),Some(402-652-4053),List(PurchaseInfo(1,wxvpilhbhfd,766), PurchaseInfo(2,fnyjmdqmtxjt,725), PurchaseInfo(3,zafeaf,862)),Some(wfqdumf))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: UserHistory(Some(Brazil),Some(59),Some(66),Some(564-897-4768),List(PurchaseInfo(1,kzqpsdswbsk,716), PurchaseInfo(2,tqabitzaavyhbfz,1379), PurchaseInfo(3,etlgjboifklsivs,603), PurchaseInfo(4,ubrvuyzvs,1037), PurchaseInfo(5,whndqmp,570), PurchaseInfo(6,bneljkprodfuud,337), PurchaseInfo(7,aekdhk,1790)),Some(gtczhgpmzkzrgxq))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: Record with country India: 989
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: 
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: Sample data read as DS from DB with constrains and few columns:
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: (Some(xljyyk),List(PurchaseInfo(1,uvlxfriyfrd,1300), PurchaseInfo(2,elfsrtumpvlyuda,1543), PurchaseInfo(3,lbcjewunuscqyca,1115), PurchaseInfo(4,mxlsqxmkfcj,1068), PurchaseInfo(5,olcposp,1655), PurchaseInfo(6,thurrbwksfzb,649), PurchaseInfo(7,gbrwwutxvxbah,1632)))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: (Some(xqmdexdddl),List(PurchaseInfo(1,abrdruglxk,639), PurchaseInfo(2,hoqjel,1172), PurchaseInfo(3,oevyxkt,1406), PurchaseInfo(4,esmgosnem,1399), PurchaseInfo(5,jzbwwln,1654), PurchaseInfo(6,dwlqgjctu,1340), PurchaseInfo(7,pklblnerg,759), PurchaseInfo(8,oswcclhxvnkdz,1757), PurchaseInfo(9,jtywzhqojxegcx,1822)))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: (Some(rsvvmhrvt),List(PurchaseInfo(1,urnnirchfbse,1455), PurchaseInfo(2,onryxvmsajf,1308), PurchaseInfo(3,basdsd,1213), PurchaseInfo(4,hfqrnxxcroak,767), PurchaseInfo(5,zytbuqkfxog,656), PurchaseInfo(6,wbtdkuioc,1433)))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: (Some(dslwfgpxej),List(PurchaseInfo(1,gcvngihmigscfpp,278), PurchaseInfo(2,xzriqqrelbin,138), PurchaseInfo(3,dobbnmptkyjmbnc,143), PurchaseInfo(4,kiksqam,872), PurchaseInfo(5,sybspxiic,1950), PurchaseInfo(6,zuxgyiqm,1115), PurchaseInfo(7,vrbktmfy,1360), PurchaseInfo(8,usylwfra,735)))
+22/12/06 11:48:40 INFO CommunicatorAppWithDfAndDs$: (Some(chsjprj),List(PurchaseInfo(1,xpczwlizqyqzmv,675), PurchaseInfo(2,alygrfzjy,999), PurchaseInfo(3,bibkqgva,1577), PurchaseInfo(4,yncbwrhndcwbm,1930), PurchaseInfo(5,fptyixggafdo,167), PurchaseInfo(6,mvnhczx,1033)))
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: 4979
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: 
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: Sample data of total price of purchase for each user: 
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(ocbci),9461)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(rqxabf),1995)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(pwgvyot),13234)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(mjkjaekblways),13687)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: totalPurchasePriceOfUser(Some(Germany),Some(dohlgmurn),10413)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: 
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: Max purchase price in a country:
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: (Germany,21630)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: (India,21220)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: (Japan,21710)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: (Nepal,20622)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: (Pakistan,20577)
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: 
+22/12/06 11:48:41 INFO CommunicatorAppWithDfAndDs$: Min purchase price in a country:
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: (Germany,0)
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: (India,0)
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: (Japan,0)
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: (Nepal,0)
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: (Pakistan,0)
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: 
+22/12/06 11:48:42 INFO CommunicatorAppWithDfAndDs$: Communicator app shutting down!

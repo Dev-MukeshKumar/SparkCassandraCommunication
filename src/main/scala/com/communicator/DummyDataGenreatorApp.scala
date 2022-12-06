@@ -9,6 +9,7 @@ import data.generate.IndividualData._
 
 import java.util.Properties
 import scala.io.Source
+import scala.collection.mutable.Set
 
 object DummyDataGeneratorApp extends Serializable {
   @transient lazy val logger: Logger = Logger.getLogger(getClass.getName)
@@ -21,11 +22,13 @@ object DummyDataGeneratorApp extends Serializable {
       .config(getSparkConf)
       .getOrCreate()
 
-
+    import spark.sqlContext.implicits._
 
     //1. random data generate and write ot DB
-    import spark.sqlContext.implicits._
     val generatedData: Dataset[UserHistory] = userHistoryList(20000).toDS()
+
+    generatedData.repartition(6)
+
     generatedData.write.format("org.apache.spark.sql.cassandra")
       .options(Map("keyspace"->"cassandra_communication","table"->"countrywise_sales"))
       .mode("append")
@@ -38,25 +41,26 @@ object DummyDataGeneratorApp extends Serializable {
       .options(Map("keyspace"->"cassandra_communication","table"->"countrywise_sales"))
       .load.as[UserHistory]
 
-    logger.info(readData.count())
+    val phoneNumberNullData = makePhoneNumberNull(spark,readData)
 
-    val phoneNumberNullData = makePhoneNumberNull(spark,randomNumberBetween(0,19900),readData)
+    val ageNullData = makeAgeNull(spark,phoneNumberNullData)
 
-    val ageNullData = makeAgeNull(spark,randomNumberBetween(0,19900),phoneNumberNullData)
+    val purchaseEmptyListData = makePurchasesEmptyList(spark,ageNullData)
 
-    val purchaseEmptyListData = makePurchasesEmptyList(spark,randomNumberBetween(0,19900),ageNullData)
+    val usernameNullData = makeUserNameNull(spark,purchaseEmptyListData)
 
-    val usernameNullData = makeUserNameNull(spark,randomNumberBetween(0,19500),purchaseEmptyListData)
-
-    val finalDS = usernameNullData.toSeq.toDS()
-
-    logger.info(finalDS.count())
-
-    finalDS.write.format("org.apache.spark.sql.cassandra")
-          .option("confirm.truncate","true")
+    usernameNullData.write.format("org.apache.spark.sql.cassandra")
           .options(Map("keyspace"->"cassandra_communication","table"->"countrywise_sales"))
-          .mode("overwrite")
+          .mode("append")
           .save()
+
+//    //testing
+//    val name = readData.filter(row => row.username.isEmpty).count()
+//    val age = readData.filter(row => row.age.isEmpty).count()
+//    val purchase = readData.filter(row => row.purchases.isEmpty).count()
+//    val phone = readData.filter(row => row.phonenumber.isEmpty).count()
+//    logger.info(name,age,purchase,phone)
+//    //op: (500,100,100,100)
 
     spark.stop()
     logger.info("Shutting down DummyDataGenerator app!")
@@ -70,36 +74,33 @@ object DummyDataGeneratorApp extends Serializable {
     sparkConf
   }
 
-  def makePhoneNumberNull(spark:SparkSession,startIndex:Int, data: Dataset[UserHistory]): Array[UserHistory] = {
-    import spark.implicits._
-    data.map(row => row.id match {
-      case Some(n) if n >= startIndex && n < (startIndex+100) => UserHistory(row.country,row.id,row.age,None,row.purchases,row.username)
-      case Some(n) => row
-    }).collect()
+  def createSet(n:Int,set:Set[Int]=Set()): Set[Int] = {
+    if(set.size>=n) set
+    else createSet(n,set+= randomNumberBetween(1,20000))
   }
 
-  def makeAgeNull(spark: SparkSession, startIndex: Int, data: Array[UserHistory]): Array[UserHistory] = {
+  def makePhoneNumberNull(spark: SparkSession, data: Dataset[UserHistory]): Dataset[UserHistory] = {
     import spark.implicits._
-    data.map(row => row.id match {
-      case Some(n) if n >= startIndex && n < (startIndex + 100) => UserHistory(row.country, row.id, None, row.phonenumber, row.purchases, row.username)
-      case Some(n) => row
-    })
+    val dataSetToUpdate = createSet(100)
+    data.map(row => if (dataSetToUpdate.contains(row.id.get)) UserHistory(row.country, row.id, row.age, None, row.purchases, row.username) else row)
   }
 
-  def makePurchasesEmptyList(spark: SparkSession, startIndex: Int, data: Array[UserHistory]): Array[UserHistory] = {
+  def makeAgeNull(spark: SparkSession, data: Dataset[UserHistory]): Dataset[UserHistory] = {
     import spark.implicits._
-    data.map(row => row.id match {
-      case Some(n) if n >= startIndex && n < (startIndex + 100) => UserHistory(row.country, row.id, row.age, row.phonenumber, List.empty, row.username)
-      case Some(n) => row
-    })
+    val dataSetToUpdate = createSet(100)
+    data.map(row =>if(dataSetToUpdate.contains(row.id.get)) UserHistory(row.country, row.id, None, row.phonenumber, row.purchases, row.username) else row)
   }
 
-  def makeUserNameNull(spark: SparkSession, startIndex: Int, data: Array[UserHistory]): Array[UserHistory] = {
+  def makePurchasesEmptyList(spark: SparkSession, data: Dataset[UserHistory]): Dataset[UserHistory] = {
     import spark.implicits._
-    data.map(row => row.id match {
-      case Some(n) if n >= startIndex && n < (startIndex + 500) => UserHistory(row.country, row.id, row.age, row.phonenumber, row.purchases, None)
-      case Some(n) => row
-    })
+    val dataSetToUpdate = createSet(100)
+    data.map(row => if(dataSetToUpdate.contains(row.id.get)) UserHistory(row.country, row.id, row.age, row.phonenumber, List.empty, row.username) else row)
+  }
+
+  def makeUserNameNull(spark: SparkSession, data: Dataset[UserHistory]): Dataset[UserHistory] = {
+    import spark.implicits._
+    val dataSetToUpdate = createSet(500)
+    data.map(row => if(dataSetToUpdate.contains(row.id.get)) UserHistory(row.country, row.id, row.age, row.phonenumber, row.purchases, None) else row)
   }
 
 }

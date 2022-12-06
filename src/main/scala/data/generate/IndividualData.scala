@@ -47,9 +47,4 @@ object IndividualData {
     if(i > n) list
     else randomPurchaseList(n,i+1,list ++ List(PurchaseInfo(i,randomName(randomNumberBetween(6,15)),randomNumberBetween(10,2000))))
   }
-
-  def main(args: Array[String]):Unit = {
-    println(randomNumberBetween(0,19900))
-    println(randomNumberBetween(0,19500))
-  }
 }
